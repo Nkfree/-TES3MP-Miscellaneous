@@ -16,8 +16,11 @@ The period can be defined either in:
 ### Configuration
 
 *script.config.useRealTime* - either *true* or *false*, determines whether to use a real-time or in-game time
+
 *script.config.restockGoldSeconds* - only available if using real-time; determines amount after which the gold gets restocked
+
 *script.config.restockGoldDays* - only available if using in-game time; determines an amount of days after which the gold gets restocked
+
 *script.config.restockGoldHours* - only available if using in-game time; determines an amount of hours after which the gold gets restocked
 
 ### Installation
