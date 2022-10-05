@@ -370,7 +370,7 @@ function script.GetCurrentGoldPool(cell, uniqueIndex)
 end
 
 function script.HasInitialGoldPool(cell, uniqueIndex)
-    return script.GetInitialGoldPool(cell, uniqueIndex) ~= nil
+    return cell.data.objectData[uniqueIndex] ~= nil and script.GetInitialGoldPool(cell, uniqueIndex) ~= nil
 end
 
 function script.HasGoldRestocked(cell, uniqueIndex)
