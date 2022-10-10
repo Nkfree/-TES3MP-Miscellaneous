@@ -427,7 +427,10 @@ function script.OnObjectMiscellaneousValidator(eventStatus, pid, cellDescription
         -- Adjust last restock day and hour
         if object.goldPool ~= nil then
             if not script.HasInitialGoldPool(cell, uniqueIndex) then
-                script.SaveInitialGoldPool(cell, uniqueIndex, object.goldPool)
+                -- Do not save initial gold pool for regular NPCs despite event ObjectMiscellaneous being generated for them
+                if object.goldPool > 0 then
+                    script.SaveInitialGoldPool(cell, uniqueIndex, object.goldPool)
+                end
             else
                 local lastGoldRestockDay = script.GetLastGoldRestockDay(cell, uniqueIndex)
                 local lastGoldRestockHour = script.GetLastGoldRestockHour(cell, uniqueIndex)
