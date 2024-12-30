@@ -31,7 +31,23 @@ The period can be defined either in:
 <li>Add main.lua in that created folder</li>
 <li>Open customScripts.lua and put there this line: require("custom.restockMerchantsGold.main")</li>
 <li>Save customScripts.lua and launch the server</li>
-<li>To confirm the script is running fine, you should see "[RestockMerchantsGold] Running..." among the first few lines of server console</li>                                                                                                                                    
+<li>To confirm the script is running fine, you should see "[RestockMerchantsGold] Running..." among the first few lines of server console</li>                                                                                       </ol>                                             
 
 ### Showcase
 [![Restock Merchants Gold showcase](https://i.ytimg.com/vi/vAsz7pjNcBE/hqdefault.jpg)](https://www.youtube.com/watch?v=vAsz7pjNcBE)
+
+## Crouch on Pouch
+
+A simple script that makes the player "crouch" when looting containers or dead NPCs.
+
+### Installation
+<ol>
+  <li>Create a folder crouchOnPouch in <tes3mp>/server/scripts/custom</li>
+  <li>Add main.lua in that created folder</li>
+  <li>Open customScripts.lua and put there this line: require("custom.crouchOnPouch.main")</li>
+  <li>Save customScripts.lua and launch the server</li>
+  <li>To confirm the script is running fine, you should see "[CrouchOnPouch] Running..." among the first few lines of server console</li>
+</ol>
+
+### Showcase
+[![Crouch on Pouch showcase](https://i.ytimg.com/vi/8C0I1Y8m0BQ/hqdefault.jpg)](https://www.youtube.com/watch?v=8C0I1Y8m0BQ)
